@@ -15,12 +15,15 @@ import { InicioComponent } from '../inicio/inicio.component';
 import { MenuComponent } from '../menu/menu.component';
 import { LoginComponent } from '../login/login.component';
 import { RodapeComponent } from '../rodape/rodape.component';
+import { RouterLink } from '@angular/router';
+import { RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet,MatButtonModule,MatCardModule, MatFormFieldModule, MatGridListModule,
-  MatIconModule, MatInputModule, MatMenuModule, MatToolbarModule, InicioComponent, MenuComponent, LoginComponent, RodapeComponent],
+  MatIconModule, MatInputModule, MatMenuModule, MatToolbarModule, InicioComponent, MenuComponent, LoginComponent, RodapeComponent,
+  RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
